@@ -1,0 +1,48 @@
+{
+  "name": "conjure-up.io",
+  "version": "1.0.0",
+  "description": "Deplyments so easy it's almost magical.",
+  "main": "index.js",
+  "scripts": {
+    "help": "gulp help",
+    "gulp": "gulp",
+    "browser-sync": "gulp browser-sync",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "develop": "gulp develop",
+    "lint": "gulp lint",
+    "serve": "gulp serve",
+    "test": "gulp test",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canonical-websites/conjure-up.io.git"
+  },
+  "author": "Canonical web team",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/canonical-websites/conjure-up.io/issues"
+  },
+  "homepage": "https://github.com/canonical-websites/conjure-up.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "browser-sync": "^2.18.8",
+    "eslint": "^3.17.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-shell": "^0.6.3",
+    "gulp-sourcemaps": "^2.4.1",
+    "node-sass": "^4.5.0",
+    "sass-lint": "^1.10.2",
+    "uglify-js": "^2.8.10"
+  }
+}
