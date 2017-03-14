@@ -1,0 +1,9 @@
+.DS_Store
+.jekyll-metadata
+.publish
+.sass-cache
+_site/
+css/
+js/
+node_modules/
+npm-debug.log

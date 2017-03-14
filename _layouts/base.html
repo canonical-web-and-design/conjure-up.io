@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - conjure-up.io</title>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K92JCQ');</script>
+        <!-- End Google Tag Manager -->
+
+        <script>
+        /* HTML5 element support */
+        for(var e,l='article aside footer header nav section time'.split(' ');e=l.pop();document.createElement(e));
+        </script>
+
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+        <!--
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.asset_path }}3361409d-apple-touch-icon-144x144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.asset_path }}5fe4d3c8-apple-touch-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.asset_path }}09460d9a-apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="{{ site.asset_path }}cc66da65-apple-touch-icon-precomposed.png" />
+        -->
+
+        <link rel="stylesheet" href="{% if layout.css_path %}{{ layout.css_path }}{% else %}/css/main.css{% endif %}">
+    </head>
+
+    <body class="{{ layout.body_class }}">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92JCQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <header class="banner global" role="banner">
+            <nav role="navigation" class="nav-primary" id="nav-primary">
+                <span class="accessibility-aid">
+                    <a href="#main-content">Jump to main content</a>
+                </span>
+                <div class="logo">
+                    <a href="/">
+                        <img src="" alt="conjure-up.io">
+                    </a>
+                </div>
+                <div id="nav">
+                    <div class="nav-toggle">
+                        <a href="#nav" class="nav-toggle__link open"></a>
+                        <a href="#" class="nav-toggle__link close"></a>
+                    </div>
+                    {% assign current = page.url | downcase | split: '/' %}
+                    <ul>
+                        <li {% if current[1] == 'community' %}class='active'{% endif %}><a href="/community">Community</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        {{ content }}
+    </body>
+</html>
