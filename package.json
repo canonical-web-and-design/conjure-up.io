@@ -22,7 +22,8 @@
   "author": "Canonical web team",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/canonical-websites/conjure-up.io/issues"
+    "url": "https://github.com/canonical-websites/conjure-up.io/issues",
+    "email": "webteam@canonical.com"
   },
   "homepage": "https://github.com/canonical-websites/conjure-up.io#readme",
   "devDependencies": {
@@ -44,5 +45,8 @@
     "node-sass": "^4.5.0",
     "sass-lint": "^1.10.2",
     "uglify-js": "^2.8.10"
+  },
+  "dependencies": {
+    "vanilla-brochure-theme": "0.0.3"
   }
 }
