@@ -9,7 +9,6 @@
 title: conjure-up
 email: webteam@canonical.com
 description: Deployments so easy it's almost magical.
-keywords: snappy, Ubuntu Core, Ubuntu 16.04 LTS, snaps, apps, debs, snap, docker, coreos, atomic, snapcraft, snapd
 baseurl: ""
 asset_path: https://assets.ubuntu.com/v1/
 navigation:
