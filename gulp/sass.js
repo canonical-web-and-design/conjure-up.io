@@ -15,7 +15,7 @@ const sassDestination = 'css';
 const sassJenkinsDestination = '_site/css';
 const sassMapsPath = './maps';
 const sassOptions = {
-    includePaths: ['scss'],
+    includePaths: ['scss', 'node_modules'],
 };
 const sassSrcBuild = '_sass/main.scss';
 const sassSrc = '_sass/**/*.scss';
