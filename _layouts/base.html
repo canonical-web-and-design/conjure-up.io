@@ -36,29 +36,29 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-        <header class="banner global" role="banner">
-            <nav role="navigation" class="nav-primary" id="nav-primary">
-                <span class="accessibility-aid">
-                    <a href="#main-content">Jump to main content</a>
-                </span>
-                <div class="logo">
-                    <a href="/">
-                        <span>conjure-up</span>
-                    </a>
-                </div>
-                <div id="nav">
-                    <div class="nav-toggle">
-                        <a href="#nav" class="nav-toggle__link open"></a>
-                        <a href="#" class="nav-toggle__link close"></a>
-                    </div>
-                    {% assign current = page.url | downcase | split: '/' %}
-                    <ul>
-                        <li {% if current[1] == 'community' %}class='active'{% endif %}><a href="/community">Community</a></li>
-                    </ul>
-                </div>
+        <header class="p-navigation" role="banner">
+          <div class="row">
+            <div class="p-navigation__logo">
+              <a class="p-navigation__link" href="/">
+                <img src="{{ site.asset_path }}d77069e9-conjure-up-logo-regular.svg" alt="conjure-up" />
+              </a>
+            </div>
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Menu</a>
+            <nav class="p-navigation__nav">
+              <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+              </span>
+              <ul class="p-navigation__links">
+                <li class="p-navigation__link"><a class="p-link--external" href="http://conjure-up.io/docs/en/users">User manual</a></li>
+                <li class="p-navigation__link"><a class="p-link--external" href="http://conjure-up.io/docs/en/developers">Developer manual</a></li>
+              </ul>
             </nav>
+          </div>
         </header>
 
-        {{ content }}
+        <main>
+          {{ content }}
+        </main>
     </body>
 </html>

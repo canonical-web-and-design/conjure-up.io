@@ -1,6 +1,74 @@
-// import global settings
-//@import 'global-settings';
+// Import site settings
+@import 'settings';
 
 // import vanilla themes
 @import "../node_modules/vanilla-brochure-theme/scss/theme";
 @include vanilla-brochure-theme;
+
+// Import modules
+@import 'patterns_navigation';
+@include cu-p-navigation;
+
+@import 'patterns_footer';
+@include cu-p-footer;
+
+body {
+  background: $color-light;
+  background-image: url("https://assets.ubuntu.com/sites/ubuntu/latest/u/img/backgrounds/image-background-paper.png");
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+}
+
+.p-list--get-started {
+  font-size: 1.4375rem;
+}
+
+.row {
+  padding: 3rem 0;
+}
+
+.row--hero {
+  padding: 2rem 0;
+}
+
+.row--get-started {
+  padding: .5rem 0 0;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.row--no-padding {
+  padding: 0;
+}
+
+.p-heading-icon__img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.p-button--neutral-icon {
+  display: flex;
+  width: 205px;
+  align-items: center;
+  background: none;
+  padding: .3rem 1.5rem !important;
+
+  img {
+    height: 35px;
+    padding-left: 5px;
+    width: 40px;
+  }
+}
+
+.p-strip--conjure-up {
+  background: #fff;
+  border-bottom: 1px dotted #ccc;
+}
+
+.p-strip--conjure-help {
+  background: #fff;
+}
