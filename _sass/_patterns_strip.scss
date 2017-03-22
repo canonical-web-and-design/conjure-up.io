@@ -1,0 +1,73 @@
+@mixin cu-p-strip {
+  @include cu-p-strip--hero;
+  @include cu-p-strip--dark;
+  @include cu-p-strip--light;
+  @include cu-p-strip--x-light;
+  @include cu-p-strip--get-started;
+  @include cu-p-strip--no-padding;
+  @include cu-p-strip--border-bottom;
+}
+
+@mixin p-strip-padding {
+  padding: 5rem 0;
+}
+
+@mixin p-strip-padding-small {
+  padding: 3rem 0;
+}
+
+@mixin cu-p-strip--hero {
+  .p-strip--hero {
+    @extend .p-strip;
+    @include p-strip-padding-small;
+  }
+}
+
+@mixin cu-p-strip--dark {
+  .p-strip--dark {
+    @extend .p-strip;
+    @include p-strip-padding;
+  }
+}
+
+@mixin cu-p-strip--light {
+  .p-strip--light {
+    @extend .p-strip;
+    @include p-strip-padding;
+  }
+}
+
+@mixin cu-p-strip--x-light {
+  .p-strip--x-light {
+    @extend .p-strip;
+    @include p-strip-padding;
+    background-color: $color-x-light;
+  }
+}
+
+@mixin cu-p-strip--get-started {
+  .p-strip--get-started {
+    @extend .p-strip;
+    @include p-strip-padding-small;
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@mixin cu-p-strip--no-padding {
+  .p-strip--no-padding {
+    @extend .p-strip;
+    padding: 0;
+  }
+}
+
+@mixin cu-p-strip--border-bottom {
+  .p-strip--border-bottom {
+    @extend .p-strip;
+    border-bottom: 1px dotted $color-mid-dark;
+    @include p-strip-padding-small;
+  }
+}
+

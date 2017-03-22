@@ -11,39 +11,6 @@ h2 {
   font-size: 1.4375rem;
 }
 
-.p-strip {
-  padding: 5rem 0;
-
-  &--dark,
-  &--light {
-    padding: 5rem 0;
-  }
-
-  &--extra-light {
-    background-color: $color-x-light;
-  }
-
-  &--hero {
-    padding: 2rem 0;
-  }
-
-  &--get-started {
-    padding: 2rem 0;
-
-    &__title {
-      margin-bottom: 1rem;
-    }
-  }
-
-  &--no-padding {
-    padding: 0;
-  }
-}
-
-.p-strip--conjure-up {
-  border-bottom: 1px dotted $color-mid-dark;
-}
-
 .p-button--neutral-icon {
   align-items: center;
   background: none;
