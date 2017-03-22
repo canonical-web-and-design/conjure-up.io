@@ -74,8 +74,8 @@
 @mixin cu-p-strip--border-bottom {
   .p-strip--border-bottom {
     @extend .p-strip;
-    border-bottom: 1px dotted $color-mid-dark;
     @include p-strip-padding;
+    border-bottom: 1px dotted $color-mid-dark;
   }
 }
 
