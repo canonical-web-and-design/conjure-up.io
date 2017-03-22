@@ -9,11 +9,19 @@
 }
 
 @mixin p-strip-padding {
-  padding: 5rem 0;
+  padding: 3rem 0;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 5rem 0;
+  }
 }
 
 @mixin p-strip-padding-small {
-  padding: 3rem 0;
+  padding: 2rem 0;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 3rem 0;
+  }
 }
 
 @mixin cu-p-strip--hero {
@@ -67,7 +75,7 @@
   .p-strip--border-bottom {
     @extend .p-strip;
     border-bottom: 1px dotted $color-mid-dark;
-    @include p-strip-padding-small;
+    @include p-strip-padding;
   }
 }
 
