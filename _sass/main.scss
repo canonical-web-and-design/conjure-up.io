@@ -2,7 +2,7 @@
 @import 'settings';
 
 // import vanilla themes
-@import "../node_modules/vanilla-brochure-theme/scss/theme";
+@import "vanilla-brochure-theme/scss/theme";
 @include vanilla-brochure-theme;
 
 // Import modules
@@ -12,63 +12,8 @@
 @import 'patterns_footer';
 @include cu-p-footer;
 
-body {
-  background: $color-light;
-  background-image: url("#{$assets-path}f8a323a7-image-background-paper.png");
-}
+@import 'patterns_heading-icon';
+@include cu-p-heading-icon;
 
-h2 {
-  margin-bottom: 2.5rem;
-}
+@import 'base';
 
-.p-list--get-started {
-  font-size: 1.4375rem;
-}
-
-.row {
-  padding: 3rem 0;
-}
-
-.row--hero {
-  padding: 2rem 0;
-}
-
-.row--get-started {
-  padding: .5rem 0 0;
-
-  &__title {
-    margin-bottom: 1rem;
-  }
-}
-
-.row--no-padding {
-  padding: 0;
-}
-
-.p-heading-icon__img {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.p-button--neutral-icon {
-  align-items: center;
-  background: none;
-  display: flex;
-  padding: .3rem 1.5rem !important;
-  width: 205px;
-
-  img {
-    height: 35px;
-    padding-left: 5px;
-    width: 40px;
-  }
-}
-
-.p-strip--conjure-up {
-  background: $white;
-  border-bottom: 1px dotted $color-mid-dark;
-}
-
-.p-strip--conjure-help {
-  background: $white;
-}

@@ -1,0 +1,59 @@
+body {
+  background: $color-light;
+  background-image: url("#{$assets-path}f8a323a7-image-background-paper.png");
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+}
+
+.p-list--get-started {
+  font-size: 1.4375rem;
+}
+
+.p-strip {
+  padding: 5rem 0;
+
+  &--dark,
+  &--light {
+    padding: 5rem 0;
+  }
+
+  &--extra-light {
+    background-color: $color-x-light;
+  }
+
+  &--hero {
+    padding: 2rem 0;
+  }
+
+  &--get-started {
+    padding: 2rem 0;
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+}
+
+.p-strip--conjure-up {
+  border-bottom: 1px dotted $color-mid-dark;
+}
+
+.p-button--neutral-icon {
+  align-items: center;
+  background: none;
+  display: flex;
+  padding: .3rem 1.5rem !important;
+  width: 205px;
+
+  img {
+    height: 35px;
+    padding-left: 5px;
+    width: 40px;
+  }
+}
