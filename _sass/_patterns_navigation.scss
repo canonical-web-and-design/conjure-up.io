@@ -13,13 +13,20 @@
     }
 
     &__links {
-      float: right;
       margin: 0;
       padding: 0;
+
+      @media (min-width: $breakpoint-medium) {
+        float: right;
+      }
     }
 
     .p-link--external {
-      @include link-svg-icon($color-x-light);
+      @include link-svg-icon($color-dark);
+
+      @media (min-width: $breakpoint-medium) {
+        @include link-svg-icon($color-x-light);
+      }
     }
   }
 
