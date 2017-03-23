@@ -26,28 +26,28 @@
 
 @mixin cu-p-strip--hero {
   .p-strip--hero {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding-small;
   }
 }
 
 @mixin cu-p-strip--dark {
   .p-strip--dark {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding;
   }
 }
 
 @mixin cu-p-strip--light {
   .p-strip--light {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding;
   }
 }
 
 @mixin cu-p-strip--x-light {
   .p-strip--x-light {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding;
     background-color: $color-x-light;
   }
@@ -55,8 +55,10 @@
 
 @mixin cu-p-strip--get-started {
   .p-strip--get-started {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding-small;
+    background-color: $color-dark;
+    color: $color-x-light;
 
     &__title {
       margin-bottom: 1rem;
@@ -66,14 +68,14 @@
 
 @mixin cu-p-strip--no-padding {
   .p-strip--no-padding {
-    @extend .p-strip;
+    @include strip;
     padding: 0;
   }
 }
 
 @mixin cu-p-strip--border-bottom {
   .p-strip--border-bottom {
-    @extend .p-strip;
+    @include strip;
     @include p-strip-padding;
     border-bottom: 1px dotted $color-mid-dark;
   }

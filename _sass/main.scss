@@ -1,11 +1,11 @@
 // Import site settings
 @import 'settings';
 
-// import vanilla themes
+// Import vanilla themes
 @import "vanilla-brochure-theme/scss/theme";
 @include vanilla-brochure-theme;
 
-// Import modules
+// Import site specific modules
 @import 'patterns_navigation';
 @include cu-p-navigation;
 
@@ -17,6 +17,9 @@
 
 @import 'patterns_strip';
 @include cu-p-strip;
+
+@import 'patterns_buttons';
+@include cu-p-buttons;
 
 @import 'base';
 
