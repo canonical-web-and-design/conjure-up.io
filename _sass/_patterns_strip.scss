@@ -20,7 +20,7 @@
   padding: 2rem 0;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -28,6 +28,10 @@
   .p-strip--hero {
     @include strip;
     @include p-strip-padding-small;
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 2rem 0;
+    }
   }
 }
 
@@ -42,6 +46,7 @@
   .p-strip--light {
     @include strip;
     @include p-strip-padding;
+    background-color: $color-light;
   }
 }
 
@@ -77,6 +82,7 @@
   .p-strip--border-bottom {
     @include strip;
     @include p-strip-padding;
+    background-color: $color-x-light;
     border-bottom: 1px dotted $color-mid-dark;
   }
 }
