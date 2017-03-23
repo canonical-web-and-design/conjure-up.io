@@ -22,10 +22,10 @@
       }
 
       .p-navigation__link {
-        border-left-color: darken($color-brand,5%);
+        border-left-color: darken($color-brand, 5%);
         position: relative;
 
-        &:before {
+        &::before {
           background: lighten($color-brand, 7%);
           content: " ";
           display: block;
@@ -37,7 +37,7 @@
         }
 
         &:last-of-type {
-          border-right-color: darken($color-brand,5%);
+          border-right-color: darken($color-brand, 5%);
         }
       }
     }
