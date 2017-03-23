@@ -18,7 +18,6 @@ exclude: [
   'README.md',
   'gulpfile.babel.js',
   'package.json',
-  'vendor',
   'node_modules'
 ]
 permalink: /:title
