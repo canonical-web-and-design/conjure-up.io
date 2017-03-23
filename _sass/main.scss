@@ -1,6 +1,25 @@
-// import global settings
-//@import 'global-settings';
+// Import site settings
+@import 'settings';
 
-// import vanilla themes
-@import "../node_modules/vanilla-brochure-theme/scss/theme";
+// Import vanilla themes
+@import "vanilla-brochure-theme/scss/theme";
 @include vanilla-brochure-theme;
+
+// Import site specific modules
+@import 'patterns_navigation';
+@include cu-p-navigation;
+
+@import 'patterns_footer';
+@include cu-p-footer;
+
+@import 'patterns_heading-icon';
+@include cu-p-heading-icon;
+
+@import 'patterns_strip';
+@include cu-p-strip;
+
+@import 'patterns_buttons';
+@include cu-p-buttons;
+
+@import 'base';
+

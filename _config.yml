@@ -6,7 +6,6 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: conjure-up
 email: webteam@canonical.com
 description: Deployments so easy it's almost magical.
 baseurl: ""
@@ -19,6 +18,7 @@ exclude: [
   'README.md',
   'gulpfile.babel.js',
   'package.json',
+  'vendor/bundle',
   'node_modules'
 ]
 permalink: /:title

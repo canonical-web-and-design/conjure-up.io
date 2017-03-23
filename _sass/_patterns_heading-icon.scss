@@ -1,0 +1,10 @@
+@mixin cu-p-heading-icon {
+
+  .p-heading-icon {
+
+    &__img {
+      height: 2.6666rem;
+      width: 2.6666rem;
+    }
+  }
+}

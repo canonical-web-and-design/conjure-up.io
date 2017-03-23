@@ -1,0 +1,89 @@
+@mixin cu-p-strip {
+  @include cu-p-strip--hero;
+  @include cu-p-strip--dark;
+  @include cu-p-strip--light;
+  @include cu-p-strip--x-light;
+  @include cu-p-strip--get-started;
+  @include cu-p-strip--no-padding;
+  @include cu-p-strip--border-bottom;
+}
+
+@mixin p-strip-padding {
+  padding: 3rem 0;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 5rem 0;
+  }
+}
+
+@mixin p-strip-padding-small {
+  padding: 2rem 0;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 2rem 0;
+  }
+}
+
+@mixin cu-p-strip--hero {
+  .p-strip--hero {
+    @include strip;
+    @include p-strip-padding-small;
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 2rem 0 3rem;
+    }
+  }
+}
+
+@mixin cu-p-strip--dark {
+  .p-strip--dark {
+    @include strip;
+    @include p-strip-padding;
+  }
+}
+
+@mixin cu-p-strip--light {
+  .p-strip--light {
+    @include strip;
+    @include p-strip-padding;
+    background-color: $color-light;
+  }
+}
+
+@mixin cu-p-strip--x-light {
+  .p-strip--x-light {
+    @include strip;
+    @include p-strip-padding;
+    background-color: $color-x-light;
+  }
+}
+
+@mixin cu-p-strip--get-started {
+  .p-strip--get-started {
+    @include strip;
+    @include p-strip-padding-small;
+    background-color: $color-dark;
+    color: $color-x-light;
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@mixin cu-p-strip--no-padding {
+  .p-strip--no-padding {
+    @include strip;
+    padding: 0;
+  }
+}
+
+@mixin cu-p-strip--border-bottom {
+  .p-strip--border-bottom {
+    @include strip;
+    @include p-strip-padding;
+    background-color: $color-x-light;
+    border-bottom: 1px dotted $color-mid-dark;
+  }
+}
+
