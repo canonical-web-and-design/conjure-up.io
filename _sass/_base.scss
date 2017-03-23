@@ -8,5 +8,13 @@ h2 {
 }
 
 .p-list--get-started {
-  font-size: 1.4375rem;
+  font-size: 1rem;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 1.4375rem;
+  }
+
+  >.p-list__item {
+    margin-bottom: 0;
+  }
 }
