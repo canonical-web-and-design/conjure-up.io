@@ -24,6 +24,7 @@
       .p-navigation__link {
         @media (min-width: $breakpoint-medium) {
           border-left-color: darken($color-brand, 5%);
+          padding: 0;
           position: relative;
 
           &::before {
@@ -39,6 +40,16 @@
 
           &:last-of-type {
             border-right-color: darken($color-brand, 5%);
+          }
+
+          > a {
+            display: inline-block;
+            padding: 15px;
+
+            &:hover {
+              background: lighten($color-brand, 4%);
+              text-decoration: none;
+            }
           }
         }
       }
