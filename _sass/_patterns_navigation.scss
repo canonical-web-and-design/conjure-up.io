@@ -13,11 +13,45 @@
     }
 
     &__links {
+      border-right: 1px solid lighten($color-brand, 7%);
       margin: 0;
       padding: 0;
 
       @media (min-width: $breakpoint-medium) {
         float: right;
+      }
+
+      .p-navigation__link {
+        @media (min-width: $breakpoint-medium) {
+          border-left-color: darken($color-brand, 5%);
+          padding: 0;
+          position: relative;
+
+          &::before {
+            background: lighten($color-brand, 7%);
+            content: " ";
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 1px;
+          }
+
+          &:last-of-type {
+            border-right-color: darken($color-brand, 5%);
+          }
+
+          > a {
+            display: inline-block;
+            padding: 15px;
+
+            &:hover {
+              background: lighten($color-brand, 4%);
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
 
@@ -28,6 +62,7 @@
         @include link-svg-icon($color-x-light);
       }
     }
+
   }
 
   .p-navigation__logo .p-navigation__link {

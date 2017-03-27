@@ -62,7 +62,7 @@
   .p-strip--get-started {
     @include strip;
     @include p-strip-padding-small;
-    background-color: $color-dark;
+    background-color: $color-darker;
     color: $color-x-light;
 
     &__title {
