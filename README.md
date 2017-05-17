@@ -32,12 +32,3 @@ More options can be found under
 ``` bash
 npm run help
 ```
-
-
-## Deploy to Github Pages
-
-To deploy to Github Pages under your local Github username, please run;
-
-`npm run deploy`
-
-You should then be able to view the site at: `http://YOUR-GITHUB-USERNAME.github.io/snapcraft.io`
