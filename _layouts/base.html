@@ -30,7 +30,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="{{ site.asset_path }}09460d9a-apple-touch-icon-72x72.png" />
         <link rel="apple-touch-icon" href="{{ site.asset_path }}cc66da65-apple-touch-icon.png" />
 
-        <link rel="stylesheet" href="{% if layout.css_path %}{{ layout.css_path }}{% else %}/css/main.css{% endif %}">
+        <link rel="stylesheet" href="{% if layout.css_path %}{{ layout.css_path }}{% else %}/static/css/main.css{% endif %}">
     </head>
 
     <body class="{{ layout.body_class }}">
@@ -43,7 +43,7 @@
           <div class="row">
             <div class="p-navigation__logo">
               <a class="p-navigation__link" href="/">
-                <img src="{{ site.asset_path }}b2c10b3e-conjure-up-LOGO.svg" alt="conjure-up" />
+                <img src="{{ site.asset_path }}b2c10b3e-conjure-up-LOGO.svg" class="p-navigation__image" alt="conjure-up" />
               </a>
             </div>
             <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
