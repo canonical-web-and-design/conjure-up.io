@@ -1,0 +1,8 @@
+// Footer pattern styling
+@mixin cu-p-footer {
+  .p-footer {
+    background: $color-x-light;
+    border: 0;
+    margin-top: 0;
+  }
+}
