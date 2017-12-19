@@ -5,7 +5,7 @@
 
 @mixin button-neutral-icon {
   .p-button--neutral-icon {
-    @include button-pattern;
+    @include vf-button-pattern;
     align-items: center;
     background: none;
     display: inline-flex;
