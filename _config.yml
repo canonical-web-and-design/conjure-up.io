@@ -15,11 +15,17 @@ navigation:
   url: /
 exclude: [
   'LICENCE',
+  'LICENSE',
   'README.md',
   'gulpfile.babel.js',
   'package.json',
   'vendor/bundle',
-  'node_modules'
+  'Dockerfile',
+  'Gemfile*',
+  'nginx.conf',
+  'node_modules',
+  'run',
+  'yarn.lock'
 ]
 permalink: /:title
 
