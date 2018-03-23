@@ -40,24 +40,28 @@
         <!-- End Google Tag Manager (noscript) -->
 
         <header id="navigation" class="p-navigation">
-          <div class="row">
+          <div class="p-navigation__banner">
             <div class="p-navigation__logo">
               <a class="p-navigation__link" href="/">
-                <img src="{{ site.asset_path }}b2c10b3e-conjure-up-LOGO.svg" class="p-navigation__image" alt="conjure-up" />
+                <img src="{{ site.asset_path }}8c237d84-conjure-up-logo-black.svg" alt="" class="p-navigation__image">
               </a>
             </div>
             <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
-            <a href="#" class="p-navigation__toggle--close" title="close menu">Menu</a>
-            <nav class="p-navigation__nav">
-              <span class="u-off-screen">
-                <a href="#main-content">Jump to main content</a>
-              </span>
-              <ul class="p-navigation__links">
-                <li class="p-navigation__link"><a href="https://docs.ubuntu.com/conjure-up/en/"><span class="p-link--external">User manual</span></a></li>
-                <li class="p-navigation__link"><a href="https://docs.ubuntu.com/conjure-up/en/dev-manual"><span class="p-link--external">Developer manual</span></a></li>
-              </ul>
-            </nav>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">Close menu</a>
           </div>
+          <nav class="p-navigation__nav" role="menubar">
+            <span class="u-off-screen">
+              <a href="#main-content">Jump to main content</a>
+            </span>
+            <ul class="p-navigation__links" role="menu">
+              <li class="p-navigation__link" role="menuitem">
+                <a href="https://docs.ubuntu.com/conjure-up/en/"><span class="p-link--external">User manual</span></a>
+              </li>
+              <li class="p-navigation__link" role="menuitem">
+                <a href="https://docs.ubuntu.com/conjure-up/en/dev-manual"><span class="p-link--external">Developer manual</span></a>
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <main id="main-content" class="inner-wrapper">
