@@ -2854,9 +2854,9 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
-vanilla-framework@1.6.6:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-1.6.6.tgz#705125b34f9317e7af8f30b62c10f303cb482767"
+vanilla-framework@1.7.0-alpha-1:
+  version "1.7.0-alpha-1"
+  resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-1.7.0-alpha-1.tgz#cbf6ce65c97a3cece65a0bb6274904cf81918b94"
 
 vendors@^1.0.0:
   version "1.0.1"
