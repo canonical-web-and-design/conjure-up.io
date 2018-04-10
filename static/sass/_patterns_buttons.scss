@@ -5,7 +5,14 @@
 
 @mixin button-neutral-icon {
   .p-button--neutral-icon {
-    @include vf-button-pattern;
+    @extend %vf-button-base;
+    @include vf-button-pattern (
+      $button-disabled-border-color: $color-mid-light,
+      $button-border-color: $color-mid-light,
+      $button-hover-background-color: $color-light,
+      $button-hover-border-color: $color-mid-light
+    );
+
     align-items: center;
     background: none;
     display: inline-flex;
