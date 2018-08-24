@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="p-strip is-deep">
+<div class="p-strip--light is-deep is-bordered">
   <div class="row u-vertically-center">
     <div class="col-6">
     <h1>Get started with big software, fast</h1>
@@ -14,20 +14,81 @@ layout: default
   </div>
 </div>
 
-<div class="p-strip--accent is-shallow">
+<div class="p-strip is-bordered">
   <div class="row">
     <div class="col-12">
-      <h2 class="u-no-margin--bottom">Get started</h2>
-      <p class="u-no-padding--top"><small>(64-bit only)</small></p>
-      <ul class="p-list p-heading--four u-no-padding--top">
-        <li class="p-list__item"><code>$ sudo snap install conjure-up --classic</code></li>
-        <li class="p-list__item"><code>$ conjure-up</code></li>
+      <h2>Get started</h2>
+      <p class="u-no-margin--bottom"><strong>Hardware requirements:</strong></p>
+      <ul class="p-inline-list--middot u-sv3">
+        <li class="p-inline-list__item">2 cores</li>
+        <li class="p-inline-list__item">16G RAM</li>
+        <li class="p-inline-list__item">32G Swap</li>
+        <li class="p-inline-list__item">250G SSD</li>
+        <li class="p-inline-list__item">64-bit only</li>
       </ul>
+      <ol class="p-stepped-list--detailed">
+          <li class="p-list-step__item col-8">
+            <h3 class="p-list-step__title">
+              <span class="p-list-step__bullet">1</span>
+              Update your system
+            </h3>
+            <div class="p-list-step__content">
+              <p>It is always recommended to have the latest packages installed prior to running conjure-up:</p>
+              <pre><code>sudo apt update
+sudo apt upgrade</code></pre>
+            </div>
+          </li>
+
+          <li class="p-list-step__item col-8">
+            <h3 class="p-list-step__title">
+              <span class="p-list-step__bullet">2</span>
+              Install conjure-up
+            </h3>
+            <div class="p-list-step__content">
+              <p>conjure-up is available on Ubuntu Xenial 16.04 LTS and macOS</p>
+              <h5 class="u-no-padding--top">On Ubuntu</h5>
+              <pre><code>sudo snap install conjure-up --classic</code></pre>
+              <div class="p-notification">
+                <p class="p-notification__response">
+                  <span class="p-notification__status">Note:</span>
+                  <span class="p-notification__line">If above command fails you’ll want to make sure <strong>snapd</strong> is installed with <code>sudo apt install snapd</code></span>
+                </p>
+              </div>
+
+              <h5 class="u-no-padding--top">On macOS</h5>
+              <pre><code>brew install conjure-up</code></pre>
+            </div>
+          </li>
+
+          <li class="p-list-step__item col-8">
+            <h3 class="p-list-step__title">
+              <span class="p-list-step__bullet">3</span>
+              Users of LXD
+            </h3>
+            <div class="p-list-step__content">
+              <p>conjure-up requires that the minimum version of LXD be 3.0.0. Additionally, LXD should be configured prior to running.</p>
+              <p><a href="https://docs.conjure-up.io/stable/en/user-manual#users-of-lxd" class="p-link--external">Follow the LXD setup documentation</a></p>
+            </div>
+          </li>
+
+          <li class="p-list-step__item col-8">
+            <h3 class="p-list-step__title">
+              <span class="p-list-step__bullet">4</span>
+              Running conjure-up
+            </h3>
+            <div class="p-list-step__content">
+              <p>To deploy solutions such as Kubernetes you will summon a spell:</p>
+              <pre><code>sudo snap install conjure-up --classic</code></pre>
+              <p>To see a list of all available spells run:</p>
+              <pre><code>conjure-up</code></pre>
+            </div>
+          </li>
+        </ol>
     </div>
   </div>
 </div>
 
-<div class="p-strip is-bordered">
+<div class="p-strip--light is-bordered">
   <div class="row">
     <div class="col-12">
       <h2>conjure-up spells</h2>
