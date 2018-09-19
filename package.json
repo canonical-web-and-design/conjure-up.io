@@ -2,9 +2,12 @@
   "name": "conjure-up.io",
   "description": "Deplyments so easy it's almost magical.",
   "scripts": {
+    "lint-nginx": "gixy nginx.conf",
+    "lint-scss": "sass-lint static/**/*.scss --verbose --no-exit",
+    "test": "yarn run lint-nginx && yarn run lint-scss",
     "build": "node-sass --include-path node_modules static/sass --output static/css && postcss --use autoprefixer --replace 'static/css/**/*.css' && postcss --use cssnano --dir static/minified 'static/css/**/*.css'",
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'",
-    "test": "sass-lint static/**/*.scss --verbose --no-exit",
+    "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle"
   },
   "repository": {
