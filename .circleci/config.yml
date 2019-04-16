@@ -30,4 +30,4 @@ workflows:
   build:
     jobs:
       - nginx-lint
-      - scss-lint
+      - lint-scss
