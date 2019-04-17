@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Lint nginx configuration files
           command: yarn lint-nginx
-  scss-lint:
+  lint-scss:
     <<: *defaults
     steps:
       - checkout
