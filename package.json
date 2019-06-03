@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/canonical-websites/conjure-up.io#readme",
   "devDependencies": {
-    "vanilla-framework": "2.0.0-alpha.1"
+    "vanilla-framework": "2.0.0-beta.1"
   },
   "dependencies": {
     "watch-cli": "^0.2.2",
