@@ -2,93 +2,91 @@
 layout: default
 ---
 
-<div class="p-strip--light is-deep is-bordered">
+<div class="p-strip--light is-deep">
   <div class="row u-vertically-center">
-    <div class="col-6">
-    <h1>Get started with big software, fast</h1>
-    <p>conjure-up lets you summon up a big-software stack as a &ldquo;spell&rdquo; &mdash; a&nbsp;model of the stack, combined with extra know-how to get you from an installed stack to a fully usable one. Start using your big software instead of learning how to deploy it.</p>
+    <div class="col-8">
+      <h1>Get started with big software, fast</h1>
+      <h2 class="p-heading--four">conjure-up lets you summon up a big-software stack as a &ldquo;spell&rdquo; &mdash; a&nbsp;model of the stack, combined with extra know-how to get you from an installed stack to a fully usable one. Start using your
+        big software instead of
+        learning how to deploy it.</h2>
     </div>
-    <div class="col-6 u-align--center u-hide--small">
+    <div class="col-4 u-align--center u-hide--small">
       <img src="{{ site.asset_path }}1abb8716-conjure-up-illustration.svg" alt="conjure-up illustration" />
     </div>
   </div>
 </div>
 
-<div class="p-strip is-bordered">
+<div class="p-strip">
   <div class="row">
-    <div class="col-12">
-      <h2>Get started</h2>
-      <p class="u-no-margin--bottom"><strong>Hardware requirements:</strong></p>
-      <ul class="p-inline-list--middot u-sv3">
-        <li class="p-inline-list__item">2 cores</li>
-        <li class="p-inline-list__item">16G RAM</li>
-        <li class="p-inline-list__item">32G Swap</li>
-        <li class="p-inline-list__item">250G SSD</li>
-        <li class="p-inline-list__item">64-bit only</li>
-      </ul>
-      <ol class="p-stepped-list--detailed">
-          <li class="p-list-step__item col-8">
-            <h3 class="p-list-step__title">
-              <span class="p-list-step__bullet">1</span>
-              Update your system
-            </h3>
-            <div class="p-list-step__content">
-              <p>It is always recommended to have the latest packages installed prior to running conjure-up:</p>
-              <pre><code>sudo apt update
+    <h2>Get started</h2>
+    <p class="p-heading--five u-no-margin--bottom">Hardware requirements:</p>
+    <ul class="p-inline-list--middot u-sv3">
+      <li class="p-inline-list__item">2 cores</li>
+      <li class="p-inline-list__item">16G RAM</li>
+      <li class="p-inline-list__item">32G Swap</li>
+      <li class="p-inline-list__item">250G SSD</li>
+      <li class="p-inline-list__item">64-bit only</li>
+    </ul>
+
+    <ol class="p-stepped-list--detailed">
+      <li class="p-stepped-list__item col-8">
+        <h3 class="p-stepped-list__title">
+          Update your system
+        </h3>
+        <div class="p-stepped-list__content">
+          <p>It is always recommended to have the latest packages installed prior to running conjure-up:</p>
+          <pre><code>sudo apt update
 sudo apt upgrade</code></pre>
-            </div>
-          </li>
+        </div>
+      </li>
 
-          <li class="p-list-step__item col-8">
-            <h3 class="p-list-step__title">
-              <span class="p-list-step__bullet">2</span>
-              Install conjure-up
-            </h3>
-            <div class="p-list-step__content">
-              <p>conjure-up is available on Ubuntu Xenial 16.04 LTS and macOS</p>
-              <h5 class="u-no-padding--top">On Ubuntu</h5>
-              <pre><code>sudo snap install conjure-up --classic</code></pre>
-              <div class="p-notification">
-                <p class="p-notification__response">
-                  <span class="p-notification__status">Note:</span>
-                  <span class="p-notification__line">If above command fails you’ll want to make sure <strong>snapd</strong> is installed with <code>sudo apt install snapd</code></span>
-                </p>
-              </div>
+      <li class="p-stepped-list__item col-8">
+        <h3 class="p-stepped-list__title">
+          Install conjure-up
+        </h3>
+        <div class="p-stepped-list__content">
+          <p>conjure-up is available on Ubuntu Xenial 16.04 LTS and macOS</p>
+          <h5 class="u-no-padding--top">On Ubuntu</h5>
+          <pre><code>sudo snap install conjure-up --classic</code></pre>
+          <div class="p-notification--information">
+            <p class="p-notification__response">
+              <span class="p-notification__status">Note:</span>
+              <span class="p-notification__line">If above command fails you’ll want to make sure <strong>snapd</strong> is installed with <code>sudo apt install snapd</code></span>
+            </p>
+          </div>
+          <h5 class="u-no-padding--top">On macOS</h5>
+          <pre><code>brew install conjure-up</code></pre>
+        </div>
+      </li>
 
-              <h5 class="u-no-padding--top">On macOS</h5>
-              <pre><code>brew install conjure-up</code></pre>
-            </div>
-          </li>
+      <li class="p-stepped-list__item col-8">
+        <h3 class="p-stepped-list__title">
+          Users of LXD
+        </h3>
+        <div class="p-stepped-list__content">
+          <p>conjure-up requires that the minimum version of LXD be 3.0.0. Additionally, LXD should be configured prior to running.
+            <a href="https://docs.conjure-up.io/stable/en/user-manual#users-of-lxd" class="p-link--external">Follow the LXD setup documentation</a>
+          </p>
+        </div>
+      </li>
 
-          <li class="p-list-step__item col-8">
-            <h3 class="p-list-step__title">
-              <span class="p-list-step__bullet">3</span>
-              Users of LXD
-            </h3>
-            <div class="p-list-step__content">
-              <p>conjure-up requires that the minimum version of LXD be 3.0.0. Additionally, LXD should be configured prior to running.</p>
-              <p><a href="https://docs.conjure-up.io/stable/en/user-manual#users-of-lxd" class="p-link--external">Follow the LXD setup documentation</a></p>
-            </div>
-          </li>
+      <li class="p-stepped-list__item col-8">
+        <h3 class="p-stepped-list__title">
+          Running conjure-up
+        </h3>
+        <div class="p-stepped-list__content">
+          <p>To deploy solutions such as Kubernetes you will summon a spell:</p>
+          <pre><code>conjure-up kubernetes</code></pre>
+          <p>To see a list of all available spells run:</p>
+          <pre><code>conjure-up</code></pre>
+        </div>
+      </li>
 
-          <li class="p-list-step__item col-8">
-            <h3 class="p-list-step__title">
-              <span class="p-list-step__bullet">4</span>
-              Running conjure-up
-            </h3>
-            <div class="p-list-step__content">
-              <p>To deploy solutions such as Kubernetes you will summon a spell:</p>
-              <pre><code>conjure-up kubernetes</code></pre>
-              <p>To see a list of all available spells run:</p>
-              <pre><code>conjure-up</code></pre>
-            </div>
-          </li>
-        </ol>
-    </div>
+    </ol>
   </div>
 </div>
 
-<div class="p-strip--light is-bordered">
+<div class="p-strip--light">
   <div class="row">
     <div class="col-12">
       <h2>conjure-up spells</h2>
@@ -96,72 +94,75 @@ sudo apt upgrade</code></pre>
   </div>
   <div class="row u-equal-height">
     <div class="col-4 p-card--highlighted">
-      <div class="p-heading-icon">
+      <div class="p-heading-icon--small">
         <div class="p-heading-icon__header">
           <img class="p-heading-icon__img" src="{{ site.asset_path }}dba11aee-kubernetes.svg" alt="Kubernetes logo" />
-          <h3 class="p-heading-icon__title">Kubernetes</h3>
+          <h4 class="p-heading-icon__title">Kubernetes</h4>
         </div>
+        <p>Get the Canonical Distribution of Kubernetes deployed and running all on a single machine.</p>
         <p><code>$ conjure-up kubernetes</code></p>
-        <p>Get the Canonical Distribution of Kubernetes deployed and running all on a single machine. </p>
         <p><a class="p-link--external" href="https://docs.ubuntu.com/conjure-up/en/walkthrough">Kubernetes with conjure-up</a></p>
       </div>
     </div>
 
     <div class="col-4 p-card--highlighted">
-      <div class="p-heading-icon">
+      <div class="p-heading-icon--small">
         <div class="p-heading-icon__header">
           <img class="p-heading-icon__img" src="{{ site.asset_path }}873bc93e-OpenStack_Logo_Mark.svg" alt="OpenStack logo" />
-          <h3 class="p-heading-icon__title">OpenStack</h3>
+          <h4 class="p-heading-icon__title">OpenStack</h4>
         </div>
-        <p><code>$ conjure-up openstack</code></p>
         <p>Easily deploy real-world OpenStack on a single machine using LXD containers.</p>
+        <p><code>$ conjure-up openstack</code></p>
         <p><a class="p-link--external" href="https://www.ubuntu.com/download/cloud/conjure-up">OpenStack with conjure-up</a></p>
       </div>
     </div>
 
     <div class="col-4 p-card--highlighted">
-      <h3>More spells</h3>
-      <p><code>$ conjure-up</code></p>
-      <p>View all spells by using the command above, or view them in the GitHub repository.</p>
-      <p><a class="p-link--external" href="https://github.com/conjure-up/spells">Go to spell registry</a></p>
+      <div class="p-heading-icon--small">
+        <div class="p-heading-icon__header">
+          <img class="p-heading-icon__img" src="{{ site.asset_path }}c7b173c6-openstack-conjure-up.svg" alt="Spell picto" />
+          <h4 class="p-heading-icon__title">More spells</h4>
+        </div>
+        <p>View all spells by using the command above, or view them in the GitHub repository.</p>
+        <p><code>$ conjure-up</code></p>
+        <p><a class="p-link--external" href="https://github.com/conjure-up/spells">Go to spell registry</a></p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="p-strip is-bordered">
+<div class="p-strip">
   <div class="row">
     <div class="col-12">
       <h2>Getting help with conjure-up</h2>
     </div>
   </div>
-  <div class="row u-equal-height p-divider">
+  <div class="row p-divider">
     <div class="col-4 p-divider__block">
-      <div class="p-heading-icon">
+      <div class="p-heading-icon--small">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="{{ site.asset_path }}3fd62570-docs.svg" alt="" />
-          <h3 class="p-heading-icon__title">User manual</h3>
+          <img class="p-heading-icon__img" src="{{ site.asset_path }}3fd62570-docs.svg" alt="User manual icon">
+          <h4 class="p-heading-icon__title">User manual</h4>
         </div>
         <p>Refer to the user manual to get a more detailed guide in how to get up and running with conjure-up.</p>
         <p><a class="p-link--external" href="https://docs.ubuntu.com/conjure-up/en/">Read the user manual</a></p>
       </div>
     </div>
-
     <div class="col-4 p-divider__block">
-      <div class="p-heading-icon">
+      <div class="p-heading-icon--small">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="{{ site.asset_path }}5c0fb313-ask+ubuntu.svg" alt="" />
-          <h3 class="p-heading-icon__title">Ask Ubuntu</h3>
+          <img class="p-heading-icon__img" src="{{ site.asset_path }}5c0fb313-ask+ubuntu.svg" alt="Ask Ubuntu icon">
+          <h4 class="p-heading-icon__title">Ask Ubuntu</h4>
         </div>
         <p>Troubleshoot and browse questions on the Ask Ubuntu StackExchange.</p>
         <p><a class="p-link--external" href="https://askubuntu.com/questions/tagged/conjure-up">Go to askubuntu.com</a></p>
       </div>
     </div>
-
     <div class="col-4 p-divider__block">
-      <div class="p-heading-icon">
+      <div class="p-heading-icon--small">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" width="100" src="{{ site.asset_path }}d3ae9c8e-irc-icon-circle.svg" alt="" />
-          <h3 class="p-heading-icon__title"><abbr title="Internet Relay Chat">IRC</abbr></h3>
+          <img class="p-heading-icon__img" src="{{ site.asset_path }}d3ae9c8e-irc-icon-circle.svg" alt="IRC icon">
+          <h4 class="p-heading-icon__title"><abbr title="Internet Relay Chat">IRC</abbr></h4>
         </div>
         <p>Join the <code>#conjure-up</code> channel on <code>irc.freenode.net</code> if you&rsquo;re having problems with getting conjure-up running.</p>
         <p><a class="p-link--external" href="https://webchat.freenode.net/">Go to webchat.freenode.net</a></p>
@@ -170,12 +171,12 @@ sudo apt upgrade</code></pre>
   </div>
 </div>
 
-<div class="p-strip--light is-bordered">
+<div class="p-strip--light">
   <div class="row">
-    <div class="col-12">
+    <div class="col-8">
       <h2>How to contribute to conjure-up</h2>
       <p>Create your own spells from scratch using the developer manual or build off existing spells via GitHub.</p>
-      <p><a class="p-button--neutral-icon" href="https://github.com/conjure-up/conjure-up">View on GitHub <img class="p-button--neutral-icon__image" src="{{ site.asset_path }}4f3fc618-github.svg" alt="GitHub logo" /></a></p>
+      <a href="https://github.com/conjure-up/conjure-up" class="p-button has-icon"><i class="p-icon--plus" style="background-image: url(https://assets.ubuntu.com/v1/f307a122-icon-github.svg)"></i> <span>View on GitHub</span></a>
     </div>
   </div>
 </div>
