@@ -1,4 +1,5 @@
 # conjure-up.io
+[![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/conjure-up.io.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/conjure-up.io) [![Code coverage](https://codecov.io/gh/canonical-web-and-design/conjure-up.io/branch/master/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/conjure-up.io)
 
 Deployments so easy it's almost magical.
 
