@@ -2,30 +2,11 @@
 
 # Build stage: Install ruby dependencies
 # ===
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 FROM ruby:2.6 AS build-jekyll
 WORKDIR /srv
 ADD . .
 RUN bundle install
 RUN bundle exec jekyll build
-=======
-FROM ruby:2.6-slim AS ruby-dependencies
-=======
-FROM ruby:2.6-slim AS build-jekyll
-WORKDIR /srv
-ADD . .
->>>>>>> 062d8d9... refactor ruby dependencies stage
-RUN apt-get update && apt-get install --no-install-recommends -y build-essential ruby-dev ruby-bundler
->>>>>>> ee5e066... change to ruby base image
-=======
-FROM ruby:2.6 AS build-jekyll
-WORKDIR /srv
-ADD . .
-RUN bundle install
-RUN bundle exec jekyll build
->>>>>>> 42121d1... Fix ruby jekyll build
 
 # Build stage: Install yarn dependencies
 # ===
