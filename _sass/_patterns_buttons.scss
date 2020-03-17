@@ -6,6 +6,7 @@
 @mixin button-neutral-icon {
   .p-button--neutral-icon {
     @extend %vf-button-base;
+
     @include vf-button-pattern (
       $button-disabled-border-color: $color-mid-light,
       $button-border-color: $color-mid-light,
@@ -15,7 +16,7 @@
 
     align-items: center;
     display: inline-flex;
-    padding: .3rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     width: auto;
 
     &__image {

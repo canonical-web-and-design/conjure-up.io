@@ -3,9 +3,10 @@
 
 // Import vanilla framework
 @import 'vanilla-framework/scss/build';
-
 @import 'patterns_footer';
+
 @include cu-p-footer;
 
 @import 'patterns_buttons';
+
 @include cu-p-buttons;
