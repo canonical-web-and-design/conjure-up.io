@@ -28,11 +28,11 @@
     "stylelint": "13.2.1",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.0.0",
-    "vanilla-framework": "2.8.0"
+    "vanilla-framework": "2.9.0"
   },
   "dependencies": {
-    "@canonical/global-nav": "2.4.0",
-    "autoprefixer": "9.7.4",
+    "@canonical/global-nav": "2.4.1",
+    "autoprefixer": "9.7.5",
     "cssnano": "4.1.10",
     "node-sass": "4.13.1",
     "postcss-cli": "7.1.0",
