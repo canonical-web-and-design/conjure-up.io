@@ -2,7 +2,7 @@
 
 # Build stage: Install ruby dependencies
 # ===
-FROM ruby:2.6 AS build-site
+FROM ruby:2.5 AS build-site
 WORKDIR /srv
 ADD . .
 RUN bundle install
@@ -33,7 +33,7 @@ RUN yarn run build-css
 
 # Build the production image
 # ===
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 # Set up environment
 ENV LANG C.UTF-8
