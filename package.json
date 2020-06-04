@@ -2,6 +2,7 @@
   "name": "conjure-up.io",
   "description": "Deplyments so easy it's almost magical.",
   "scripts": {
+    "start": "yarn run build && yarn run serve",
     "lint-nginx": "gixy nginx.conf",
     "lint-scss": "stylelint _sass/**/*.scss",
     "build": "yarn run build-css && yarn run build-js && yarn run build-jekyll",
