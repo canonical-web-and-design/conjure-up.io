@@ -60,3 +60,6 @@ env[23]/
 
 # Project-specific ignores
 js/build
+.dotrun.json
+.venv
+_site/
