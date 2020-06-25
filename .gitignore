@@ -63,3 +63,4 @@ js/build
 .dotrun.json
 .venv
 _site/
+src/js/build
