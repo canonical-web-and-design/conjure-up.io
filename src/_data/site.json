@@ -1,0 +1,10 @@
+{
+  "asset_path": "https://assets.ubuntu.com/v1/",
+  "email": "webteam@canonical.com",
+  "description": "Deployments so easy it's almost magical.",
+  "baseurl": "",
+  "navigation": {
+    "text": "Home",
+    "url": "/"
+  }
+}
