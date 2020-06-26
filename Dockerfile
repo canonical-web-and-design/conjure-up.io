@@ -12,14 +12,16 @@ RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
 # Build stage: Build JavaScript
 # ===
 FROM yarn-dependencies AS build-js
-ADD . .
+WORKDIR /srv
+COPY src/js src/js
 RUN yarn run build-js
 
 
 # Build stage: Build CSS
 # ===
 FROM yarn-dependencies AS build-css
-ADD . .
+WORKDIR /srv
+COPY src/_sass src/_sass
 RUN yarn run build-css
 
 
@@ -46,9 +48,7 @@ RUN apt-get update && apt-get install --no-install-recommends --yes nginx
 
 # Import code, build assets and mirror list
 RUN rm -rf package.json yarn.lock .babelrc webpack.config.js
-COPY --from=build-site srv/_site .
-COPY --from=build-css srv/css css
-COPY --from=build-js srv/js js
+COPY --from=build-site /srv/_site .
 
 ARG BUILD_ID
 ADD nginx.conf /etc/nginx/sites-enabled/default
