@@ -13,7 +13,6 @@ RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
 # ===
 FROM yarn-dependencies AS build-js
 WORKDIR /srv
-COPY src/js src/js
 RUN yarn run build-js
 
 
@@ -47,7 +46,7 @@ WORKDIR /srv
 RUN apt-get update && apt-get install --no-install-recommends --yes nginx
 
 # Import code, build assets and mirror list
-RUN rm -rf package.json yarn.lock .babelrc webpack.config.js
+RUN rm -rf package.json yarn.lock .babelrc webpack.config.js nginx.conf
 COPY --from=build-site /srv/_site .
 
 ARG BUILD_ID

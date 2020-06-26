@@ -1,0 +1,38 @@
+# logs
+*.log
+
+# Documentation
+README.md
+HACKING.md
+
+# Version control
+.git*
+
+# Local development tooling
+run
+env*
+.env*
+.*.hash
+.docker-project
+.vscode
+.editorconfig
+
+# Cache files
+cache.sqlite
+.webcache*
+
+# Helper scripts
+scripts
+test-redirects.pl
+
+# Testing
+tests
+.sass-lint.yml
+.circleci
+
+# The node_modules folder will be rebuilt
+node_modules
+
+# Docker
+.dockerignore
+Dockerfile
