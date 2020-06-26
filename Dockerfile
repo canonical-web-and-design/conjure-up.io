@@ -1,17 +1,9 @@
 # syntax=docker/dockerfile:experimental
 
-# Build stage: Install ruby dependencies
-# ===
-FROM ruby:2.5 AS build-site
-WORKDIR /srv
-ADD . .
-RUN bundle install
-RUN bundle exec jekyll build
-
 
 # Build stage: Install yarn dependencies
 # ===
-FROM node:12-slim AS yarn-dependencies
+FROM node:14-slim AS yarn-dependencies
 WORKDIR /srv
 ADD package.json .
 RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
@@ -29,6 +21,16 @@ RUN yarn run build-js
 FROM yarn-dependencies AS build-css
 ADD . .
 RUN yarn run build-css
+
+
+# Build stage: Run "yarn run build-site"
+# ===
+FROM yarn-dependencies AS build-site
+WORKDIR /srv
+COPY src/ src/
+COPY --from=build-css /srv/src/css src/css
+COPY --from=build-js /srv/src/js src/js
+RUN yarn run build-site
 
 
 # Build the production image
