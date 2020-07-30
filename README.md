@@ -1,6 +1,6 @@
 # conjure-up.io
 
-***Archived: The https://cloud-init.io website has been retired, and the traffic redirected to https://juju.is. The repository will now be archived.***
+***Archived: The https://conjure-up.io website has been retired, and the traffic redirected to https://juju.is. The repository will now be archived.***
 
 ---
 
